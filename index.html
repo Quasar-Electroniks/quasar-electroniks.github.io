@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f6f7" />
+  <meta name="description" content="Quasar — proiecte de electronică, embedded, audio și automatizare." />
+  <title>Quasar — Engineering the unseen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="quasar-symbol.png?v=10">
+  <link rel="apple-touch-icon" href="quasar-symbol.png?v=10">
+  <link rel="stylesheet" href="styles-v3.css?v=15" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="rail rail-left" aria-hidden="true"></div>
+  <div class="rail rail-right" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="Quasar, pagina principală">
+      <img src="quasar-logo.png" alt="Quasar" />
+    </a>
+    <div class="top-meta"><span class="status-dot"></span> INDEPENDENT ENGINEERING LAB</div>
+    <div class="top-actions">
+      <div class="weather-widget" id="weather" role="status" aria-live="polite" title="Vremea din locația ta">
+        <span class="weather-icon" id="weather-icon" aria-hidden="true"></span>
+        <span class="weather-data"><small id="weather-state">LOCAL WEATHER</small><strong id="weather-temp">--°</strong></span>
+      </div>
+      <a class="contact-link" href="mailto:quasar.electroniks@gmail.com">CONTACT <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <div class="intro">
+        <p class="eyebrow"><span>01</span> PROIECTE / SISTEME / IDEI</p>
+        <h1>Construiesc<br><em>idei</em> care<br>devin reale.</h1>
+        <p class="lede">Electronică, embedded, audio și automatizare — proiectate de la prima schemă până la produsul care funcționează.</p>
+        <div class="signature"><span></span> LUCIAN CATALIN · QUASAR</div>
+      </div>
+
+      <div class="transition-lines" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="orbital-zone">
+        <div class="orbit-rings" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </div>
+        <div class="sphere-wrap">
+          <div id="sphere" class="sphere" role="navigation" aria-label="Categorii de proiecte"></div>
+          <div class="sphere-core" aria-hidden="true"><img src="quasar-symbol.png" alt=""><span>EXPLORE</span></div>
+        </div>
+        <div class="drag-hint"><span class="mouse-icon"></span> TRAGE PENTRU A EXPLORA</div>
+        <div class="coordinates">44.4268° N<br>26.1025° E</div>
+      </div>
+    </section>
+
+    <section class="project-strip" aria-label="Domenii principale">
+      <article><span>01</span><h2>Embedded</h2><p>Firmware, RTOS și sisteme multicore</p></article>
+      <article><span>02</span><h2>Hardware</h2><p>Scheme, PCB și prototipare</p></article>
+      <article><span>03</span><h2>Interfaces</h2><p>HMI, display-uri și experiențe tactile</p></article>
+      <article><span>04</span><h2>Connected</h2><p>IoT, wireless și automatizare</p></article>
+    </section>
+
+    <section class="research-gateway" id="research-lab" aria-label="Laboratorul de cercetare și dezvoltare">
+      <a href="#research-lab" class="research-link" aria-label="Pasiune Pe Paine — laboratorul de dezvoltare a proiectelor">
+        <img src="pasiune-pe-paine.png" alt="Pasiune Pe Paine" />
+        <span class="research-copy"><small>QUASAR / RESEARCH &amp; DEVELOPMENT</small><strong>Laboratorul de dezvoltare a proiectelor</strong></span>
+        <span class="research-arrow">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer><span>QUASAR © 2026</span><span class="footer-line"></span><span>BUILT WITH CURIOSITY</span></footer>
+  <script src="weather.js?v=15"></script>
+  <script src="sphere.js?v=15"></script>
+</body>
+</html>
